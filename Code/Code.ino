@@ -55,9 +55,9 @@ void setup() {
 
         display.clearDisplay();
         display.setTextSize(2);
-        displayCenter("Distance",2); 
+        displayCenter("Length(mm)",15); 
         display.setTextSize(3);      
-        displayCenter(String(units),30);
+        displayCenter(String(units),42);
         lastDisplay=millis();
 
 }
@@ -105,9 +105,9 @@ void updateDisplay()
         {
         display.clearDisplay();
         display.setTextSize(2);
-        displayCenter("Distance",2); 
+        displayCenter("Length(mm)",15); 
         display.setTextSize(3);      
-        displayCenter(String(float(units*factor)),30);
+        displayCenter(String(float(units*factor)),42);
         lastDisplay=millis();
         lastdata = lastDisplay;
          i=0;
